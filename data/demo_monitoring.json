@@ -1,0 +1,95 @@
+{
+  "site": {
+    "name": "Demo Open-Pit Mine",
+    "location": "Monitoring Zone A",
+    "latitude": 23.685,
+    "longitude": 86.952
+  },
+
+  "summary": {
+    "current_risk": "HIGH",
+    "risk_probability": 78,
+    "active_zones": 3,
+    "monitoring_status": "ONLINE"
+  },
+
+  "terrain": {
+    "stability_index": 68,
+    "slope_angle": 42,
+    "elevation": 356,
+    "ground_movement": 4.8
+  },
+
+  "weather": {
+    "temperature": 24,
+    "rainfall": 12,
+    "humidity": 78,
+    "wind_speed": 18
+  },
+
+  "risk_history": [
+    42,
+    48,
+    45,
+    58,
+    63,
+    72,
+    68,
+    81,
+    76,
+    85,
+    79,
+    88
+  ],
+
+  "zones": [
+    {
+      "id": "A-01",
+      "latitude": 23.685,
+      "longitude": 86.952,
+      "risk": 42,
+      "status": "LOW"
+    },
+    {
+      "id": "B-12",
+      "latitude": 23.687,
+      "longitude": 86.956,
+      "risk": 82,
+      "status": "HIGH"
+    },
+    {
+      "id": "C-04",
+      "latitude": 23.682,
+      "longitude": 86.948,
+      "risk": 64,
+      "status": "MEDIUM"
+    }
+  ],
+
+  "alerts": [
+    {
+      "id": 1,
+      "type": "HIGH",
+      "title": "High Risk Zone Detected",
+      "zone": "B-12",
+      "message": "Predicted rockfall probability has exceeded the warning threshold.",
+      "time": "8 minutes ago"
+    },
+    {
+      "id": 2,
+      "type": "MEDIUM",
+      "title": "Ground Movement Increased",
+      "zone": "C-04",
+      "message": "Ground displacement is above the normal monitoring range.",
+      "time": "21 minutes ago"
+    },
+    {
+      "id": 3,
+      "type": "LOW",
+      "title": "Monitoring Normal",
+      "zone": "A-01",
+      "message": "No significant instability detected.",
+      "time": "35 minutes ago"
+    }
+  ]
+}
