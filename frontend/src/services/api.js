@@ -18,7 +18,7 @@
 //         `${API_BASE_URL}/api/risk`
 //     );
 
-//     if (!response.ok) {
+//     if (!response.ok) {git commit -m "Initial commit - Major Project UI"
 //         throw new Error("Failed to load risk data");
 //     }
 
